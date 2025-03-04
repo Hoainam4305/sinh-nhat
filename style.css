@@ -819,20 +819,3 @@ body {
         font-size: 1rem!important;
     }
 }
-
-.to-me {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px; /* Khoảng cách giữa "BIRTHDAY" và "TO ME" */
-    font-size: 2rem;
-    font-weight: bold;
-    color: #ff4081; /* Màu sắc tùy chỉnh */
-}
-
-.to-me span {
-    display: inline-block;
-    opacity: 0;
-    transform: translateY(10px);
-    animation: fadeInUp 0.5s var(--t) ease-in-out forwards;
-}
-
