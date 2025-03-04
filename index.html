@@ -9,8 +9,11 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <script src="script.js"></script>
-    <audio id="myAudio" src="sn.mp3" preload="auto" autoplay></audio>
+    <audio id="birthdayAudio" hidden autoplay>
+        <source src="sn.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    
     <div id="wrapper">
         <div class="flag__birthday">
             <img src="./images/1.png" alt="" width="350" class="flag__left">
@@ -151,6 +154,11 @@
     </div>
 </body>
 <script>
+    // Đoạn mã JavaScript tự động phát âm thanh khi trang tải xong
+    window.onload = function() {
+            var audio = document.getElementById('birthdayAudio');
+            audio.play();
+        }
     let datetxt = "04/03/2005";
     let datatxtletter = `Hôm nay là ngày đặc biệt , ngày tôi bước sang một tuổi mới! 🎉 Không chỉ là thêm một con số, mà còn là hành trình trưởng thành, học hỏi và khám phá.
 Nhìn lại, tôi biết ơn những trải nghiệm đã giúp tôi mạnh mẽ hơn. Ở tuổi mới, tôi sẽ lạc quan, kiên trì theo đuổi đam mê, yêu thương bản thân và trân trọng những điều quan trọng.
